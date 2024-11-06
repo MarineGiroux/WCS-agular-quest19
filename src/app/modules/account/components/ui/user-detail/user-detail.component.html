@@ -1,0 +1,15 @@
+
+<h1>{{user.lastname}}</h1>
+@if(user){
+    <ul>
+        <li>Identifiant : {{user.id}}</li>
+        <li>Pseudo : {{user.username}}</li>
+        <li>Prénom : {{user.firstname}} </li>
+        <li>Nom : {{user.lastname}} </li>
+        <li>Email : {{user.email}} </li>
+    </ul>
+}
+
+
+
+<button [routerLink]="['/account']">Retour</button>

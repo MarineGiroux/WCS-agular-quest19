@@ -1,1 +1,9 @@
-<button [routerLink]="['']">home</button>
+<ul>
+    @for(id of [1, 2, 3, 4, 5]; track id) {
+        <li>
+            <a [routerLink]="['user', id]">Utilisateur : {{id}}</a>
+        </li>
+    }
+</ul>
+
+<button [routerLink]="['/']">Retour</button>
